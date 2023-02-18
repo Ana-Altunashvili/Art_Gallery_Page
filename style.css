@@ -1,0 +1,524 @@
+body {
+    background-color: #FCFAF9;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/*header*/
+
+.desktop_header {
+    display: none;
+}
+
+.tablet_hero_photo {
+    display: none;
+}
+
+.mobile_hero_photo {
+    width: 100%;
+}
+
+.mobile_grid_1,
+.mobile_grid_2,
+.mobile_grid_3 {
+    width: 100%;
+}
+
+.txt_modern_art_galery {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px 120px 16px;
+}
+
+.dark_logo {
+    width: 300px;
+    margin-bottom: 32px;
+}
+
+.findout_inspiration {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #444444;
+    font-family: "Outfit";
+    font-style: normal;
+    margin-bottom: 32px;
+}
+
+
+.main_button {
+    position: relative;
+    width: 260px;
+    height: 72px;
+}
+
+span {
+    position: absolute;
+    top: 24px;
+    left: 32px;
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.64px;
+}
+
+.right_arrow {
+    position: absolute;
+    width: 8px;
+    height: 24px;
+    right: 9%;
+    bottom: 35%;
+}
+
+.location_button {
+    background: linear-gradient(to right, #151515 78.5%, #d5966c 21.5%);
+    border: none;
+    color: white;
+    width: 260px;
+    height: 72px;
+    cursor: pointer;
+}
+
+.location_button:hover {
+    background: linear-gradient(to right, #d5966c 78.5%, #151515 21.5%);
+}
+
+/*main section*/
+
+main {
+    /*display: flex;
+    flex-direction: column;*/
+    padding: 0px 16px 120px 16px;
+}
+
+.tablet_grid_1,
+.tablet_grid_2,
+.tablet_grid_3 {
+    display: none;
+}
+
+.desktop_grid_1,
+.desktop_grid_2,
+.desktop_grid_3 {
+    display: none;
+}
+
+.galery_introduction h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 45px;
+    color: #151515;
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    margin-top: 25px;
+    margin-bottom: 21px;
+}
+
+.galery_introduction p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 32px;
+    color: #444444;
+}
+
+.mobile_grid_2,
+.mobile_grid_3,
+.invitation {
+    margin-bottom: 16px;
+}
+
+.invitation {
+    background-color: #151515;
+    width: 100%;
+    height: 293px;
+    padding: 48px 24px 47px 24px;
+}
+
+.invitation h1 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.invitation p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+/* footer */
+
+footer {
+    background: #151515;
+    width: 100%;
+    height: 336px;
+    padding-left: 32px;
+    padding-top: 48px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.light_logo {
+    width: 110px;
+    height: 40px;
+}
+
+footer p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    padding: 38px 32px 38px 0px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.social_media {
+    fill: white;
+    cursor: pointer;
+}
+
+.social_media:hover {
+    filter: invert(65%) sepia(17%) saturate(978%) hue-rotate(341deg) brightness(180%) contrast(100%);
+}
+
+/* For tablet version */
+@media screen and (min-width: 768px) {
+
+    .mobile_hero_photo,
+    .mobile_grid_1,
+    .mobile_grid_2,
+    .mobile_grid_3 {
+        display: none;
+    }
+
+    .tablet_hero_photo,
+    .tablet_grid_1,
+    .tablet_grid_2,
+    .tablet_grid_3 {
+        display: block;
+    }
+
+    .tablet_hero_photo {
+        position: relative;
+        width: 437px;
+        height: 700px;
+    }
+
+    .txt_modern_art_galery {
+        position: absolute;
+        top: 19%;
+        left: 389px;
+        gap: 26px;
+
+    }
+
+    .findout_inspiration {
+        width: 339px;
+        height: 112px;
+    }
+
+    main {
+        padding: 120px 40px;
+    }
+
+    .introduction {
+        /*display: flex;
+        align-items: center;*/
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 68px;
+    }
+
+    .galery_introduction {
+        display: inline-block;
+        width: 223px;
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        justify-self: end;
+    }
+
+    .galery_introduction h1 {
+        text-transform: uppercase;
+        margin: 25px 0 21px 0;
+    }
+
+    .tablet_grid_1 {
+        /*display: inline-block;
+        margin-left: 291px;
+        position: absolute;
+        width: 398px;
+        height: 400px;*/
+        height: 400px;
+        width: 398px;
+        grid-column: 2;
+    }
+
+    .gallery_grids {
+        /*display: flex;
+        justify-content: center;
+        gap: 11px;
+        padding: 11px 40px 0px 39px;*/
+        margin-top: 11px;
+        gap: 11px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tablet_grid_2 {
+        /*display: inline;*/
+        width: 398px;
+        height: 720px;
+    }
+
+    .tablet_grid_3 {
+        display: inline;
+        width: 280px;
+        height: 313px;
+        grid-column: 2;
+        grid-row: 1;
+        margin-bottom: 11px;
+    }
+
+
+    .invitation {
+        /*margin-top: 11px;
+        display: inline-block;*/
+        width: 280px;
+        height: 396px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .invitation p {
+        width: 223px;
+    }
+
+    footer {
+        width: 100%;
+        height: 216px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .light_logo {
+        margin-bottom: 120px;
+    }
+
+    footer p {
+        width: 281px;
+        margin-bottom: 56px;
+    }
+
+    .social_media {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .icons {
+        min-width: 100px;
+        margin-bottom: 140px;
+    }
+}
+
+
+/*For Desktop Version */
+
+@media screen and (min-width: 1440px) {
+
+    .dark_logo,
+    .tablet_hero_photo,
+    .tablet_grid_1,
+    .tablet_grid_2,
+    .tablet_grid_3 {
+        display: none;
+    }
+
+    .desktop_header,
+    .desktop_grid_1,
+    .desktop_grid_2,
+    .desktop_grid_3 {
+        display: inline-block;
+    }
+
+    .desktop_header {
+        width: 950px;
+        height: 799px;
+        background-color: #151515;
+        display: flex;
+        justify-content: end;
+    }
+
+    .desktop_header h1 {
+        color: white;
+        font-family: 'Big Shoulders Display';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 88px;
+        text-transform: uppercase;
+        width: 514px;
+        height: 176px;
+        position: absolute;
+        left: 125px;
+        top: 190px;
+        background: linear-gradient(to right, white 56%, #151515 44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .dasktop_hero_photo {
+        position: relative;
+        width: 540px;
+        height: 800px;
+        margin-left: 450px;
+    }
+
+    .txt_modern_art_galery {
+        position: absolute;
+        top: 18%;
+        margin-left: 475px;
+    }
+
+    .findout_inspiration {
+        font-size: 22px;
+        line-height: 32px;
+        width: 350px;
+        margin-bottom: 90px;
+    }
+
+    main {
+        padding: 180px 164px 180px 165px;
+    }
+
+    .introduction {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 125px;
+    }
+
+    .galery_introduction {
+        display: inline-block;
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        justify-self: end;
+        width: 350px;
+    }
+
+    .galery_introduction h1 {
+        width: 350px;
+        height: 120px;
+        font-size: 60px;
+        line-height: 60px;
+        text-transform: uppercase;
+        color: #151515;
+    }
+
+    .galery_introduction p {
+        font-size: 22px;
+        line-height: 32px;
+        width: 350px;
+        height: 128px;
+    }
+
+    .desktop_grid_1 {
+        width: 635px;
+        height: 400px;
+        grid-column: 2;
+    }
+
+    .gallery_grids {
+        margin-top: 30px;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desktop_grid_2 {
+        height: 720px;
+        width: 635px;
+        margin-bottom: 30px;
+    }
+
+    .desktop_grid_3 {
+        display: inline;
+        width: 445px;
+        height: 313px;
+        grid-column: 2;
+        grid-row: 1;
+        margin-bottom: 30px;
+    }
+
+    .invitation {
+        width: 445px;
+        height: 377px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .invitation h1 {
+        font-size: 60px;
+        line-height: 60px;
+        width: 350px;
+    }
+
+    .invitation p {
+        font-size: 22px;
+        line-height: 32px;
+        width: 350px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 244px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer p {
+        font-size: 18px;
+        line-height: 28px;
+        width: 430px;
+        margin-bottom: 80px;
+    }
+
+
+    .light_logo {
+        width: 159.57px;
+        height: 58px;
+        margin-bottom: 106px;
+    }
+}
